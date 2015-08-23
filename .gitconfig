@@ -1,0 +1,17 @@
+[user]
+	name = emilssolmanis
+	email = emils.solmanis@gmail.com
+	signingkey = F7105815
+[github]
+	user = emilssolmanis
+	token = nopenopenopeyouneedtosetthis
+[core]
+	excludesfile = /home/emils/.gitignore
+	editor = emacs
+	autocrlf = input
+[push]
+	default = matching
+[init]
+	templatedir = /home/emils/.git_template
+[rerere]
+	enabled = true

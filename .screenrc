@@ -1,0 +1,5 @@
+escape ^^^^
+bindkey -k kb
+bindkey -d -k kb
+bindkey -k kD
+bindkey -d -k kD

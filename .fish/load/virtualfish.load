@@ -1,0 +1,14 @@
+# Virtualfish setup and init
+set VIRTUALFISH_HOME ~/Envs
+set PROJECT_HOME ~/workspace
+. ~/.fish/scripts/virtualfish/virtual.fish
+. ~/.fish/scripts/virtualfish/auto_activation.fish
+. ~/.fish/scripts/virtualfish/projects.fish
+
+function change_dir_to_project --on-event virtualenv_did_activate
+    if test -f "$VIRTUAL_ENV/.project" -a (pwd) != "$VIRTUAL_ENV";
+       cd (cat $VIRTUAL_ENV/.project)
+    end
+    
+    echo "The virtualenv" (basename $VIRTUAL_ENV) "was activated"
+end

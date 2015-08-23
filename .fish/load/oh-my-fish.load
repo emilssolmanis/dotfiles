@@ -1,0 +1,19 @@
+########################################
+#           Oh My Fish                 #
+########################################
+
+# Path to your oh-my-fish.
+set fish_path $HOME/.oh-my-fish
+
+set -g theme_display_ruby no
+
+# Load oh-my-fish configuration.
+. $fish_path/oh-my-fish.fish
+
+# Theme
+Theme "bobthefish"
+
+Plugin "z"
+Plugin "extract"
+Plugin "node"
+Plugin "rvm"
