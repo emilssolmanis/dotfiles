@@ -12,6 +12,9 @@ git_it https://github.com/adambrenecki/virtualfish.git .fish/scripts/virtualfish
 git_it https://github.com/bpinto/oh-my-fish.git .oh-my-fish
 git_it https://github.com/rupa/z.git z
 
+git_it https://github.com/tj/n.git n
+pushd n; and env PREFIX=$HOME N_PREFIX=$HOME/.n make install; popd
+
 . .oh-my-fish/oh-my-fish.fish
 omf install bobthefish z extract node rvm
 
