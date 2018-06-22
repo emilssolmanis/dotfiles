@@ -1,0 +1,1 @@
+set fish_user_abbreviations $fish_user_abbreviations "emacs-gui=open -a /Applications/Emacs.app"

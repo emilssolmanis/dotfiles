@@ -10,6 +10,9 @@
 (subword-mode 1)
 (load-theme 'wombat)
 
+(let ((default-directory "/usr/local/share/emacs/site-lisp/"))
+    (normal-top-level-add-subdirs-to-load-path))
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
@@ -30,3 +33,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(eshell-visual-commands (quote ("vi" "screen" "top" "less" "more" "lynx" "ncftp" "pine" "tin" "trn" "elm" "htop" "tig"))))
+
+(global-set-key (kbd "M-3") '(lambda () (interactive) (insert "#")))

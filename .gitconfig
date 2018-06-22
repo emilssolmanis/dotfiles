@@ -1,17 +1,23 @@
+[alias]
+    hub = repo hub
+    lab = repo lab
 [user]
-	name = emilssolmanis
-	email = emils.solmanis@gmail.com
-	signingkey = F7105815
+	name = Emils Solmanis
+	email = emils@metabroadcast.com
 [github]
 	user = emilssolmanis
-	token = nopenopenopeyouneedtosetthis
+	token = 1b132054fe5c753cc62e64f289055db13b57587f
 [core]
-	excludesfile = /home/emils/.gitignore
+	excludesfile = /Users/emils/.gitignore
 	editor = emacs
 	autocrlf = input
 [push]
 	default = matching
 [init]
-	templatedir = /home/emils/.git_template
+	templatedir = /Users/emils/.git_template
 [rerere]
 	enabled = true
+[gitrepo "gitlab"]
+    token = ymvCPu2Z-EMEcPDAgnNK
+[gitrepo "github"]
+    token = 7b7c79b57d81ad2b0c6a67383ac7ef6d13ac3d60
